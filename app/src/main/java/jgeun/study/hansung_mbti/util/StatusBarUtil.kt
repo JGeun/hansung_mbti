@@ -11,7 +11,8 @@ class StatusBarUtil {
     enum class StatusBarColorType(val backgroundColorId: Int) {
         // 색 지정
         WHITE_STATUS_BAR(R.color.white),
-        DEFAULT_STATUS_BAR(R.color.white)
+        DEFAULT_STATUS_BAR(R.color.white),
+        QUESTION_STATUS_BAR(R.color.questionBackgroundColor)
     }
 
     companion object{

@@ -9,6 +9,7 @@ import android.util.Log
 import jgeun.study.hansung_mbti.MainActivity
 import jgeun.study.hansung_mbti.R
 import jgeun.study.hansung_mbti.databinding.ActivityLoadingBinding
+import jgeun.study.hansung_mbti.question.QuestionActivity
 import jgeun.study.hansung_mbti.util.StatusBarUtil
 import kotlin.concurrent.thread
 
@@ -31,7 +32,8 @@ class LoadingActivity : AppCompatActivity() {
                 }
                 Thread.sleep(50)
             }
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, QuestionActivity::class.java))
+            overridePendingTransition(0, 0);
         }
     }
 }

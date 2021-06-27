@@ -11,4 +11,5 @@
     <color name="mainColor">#0F296B</color>
     <color name="subColor">#525E8A</color>
     <color name="loadingbarColor">#133B77</color>
+    <color name="questionBackgroundColor">#F2F3F7</color>
 </resources>
