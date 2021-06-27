@@ -42,26 +42,30 @@ class QuestionActivity : AppCompatActivity() {
         initAnswer()
 
         binding.firstQuestion.setOnClickListener{
+            checkMBTI(1)
             if(index >= questionList.size){
                 defineMBTI()
                 intentResult.putExtra("mbti", personMBTI)
+                println("mbti결정: " + personMBTI)
                 startActivity(intentResult)
                 overridePendingTransition(0, 0);
             }else{
-                checkMBTI(1)
+
                 logMBTI()
                 settingText()
             }
         }
 
         binding.secondQuestion.setOnClickListener{
+            checkMBTI(2)
             if(index >= questionList.size){
                 defineMBTI()
+                println("defineMBTI: " + personMBTI)
                 intentResult.putExtra("mbti", personMBTI)
+                println("mbti결정: " + personMBTI)
                 startActivity(intentResult)
                 overridePendingTransition(0, 0);
             }else{
-                checkMBTI(2)
                 logMBTI()
                 settingText()
             }
@@ -83,7 +87,7 @@ class QuestionActivity : AppCompatActivity() {
             personMBTI = "ENFP"
         }else if(mbti_EI > 0 && mbti_SN <0 && mbti_FT < 0 && mbti_JP > 0){
             personMBTI = "ENTJ"
-        }else if(mbti_EI > 0 && mbti_SN <0 && mbti_FT < 0 && mbti_JP > 0){
+        }else if(mbti_EI > 0 && mbti_SN <0 && mbti_FT < 0 && mbti_JP < 0){
             personMBTI = "ENTP"
 //            -------------------
         }else if(mbti_EI < 0 && mbti_SN >0 && mbti_FT > 0 && mbti_JP > 0){
@@ -108,6 +112,7 @@ class QuestionActivity : AppCompatActivity() {
     }
 
     private fun checkMBTI(checkNum: Int){
+        println("index: " + index)
         when(index){
             1 -> {
                 if (checkNum == 1){
