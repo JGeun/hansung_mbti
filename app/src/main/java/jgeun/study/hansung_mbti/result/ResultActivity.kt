@@ -124,7 +124,7 @@ class ResultActivity : AppCompatActivity() {
                 positiveMBTI = "만능 회사원"
                 negativeMBTI = "사회적 거리두기 최강자"
                 positiveImage = ResourcesCompat.getDrawable(resources, R.drawable.img_istp, null)!!
-                negativeImage = ResourcesCompat.getDrawable(resources, R.drawable.img_esfj, null)!!
+                negativeImage = ResourcesCompat.getDrawable(resources, R.drawable.img_istj, null)!!
             }
             "ENTJ" -> {
                 title = "나를 따르라"
@@ -150,7 +150,7 @@ class ResultActivity : AppCompatActivity() {
                         "따라서 사람에게 정을 붙이는데 오랜 시간이 걸릴 수는 있으나 친해진다면, 그 누구보다 의리있는 친구가 되어줄 것입니다.\n\n"
                 positiveMBTI = "사회적 거리두기 최강자"
                 negativeMBTI = "만능 회사원"
-                positiveImage = ResourcesCompat.getDrawable(resources, R.drawable.img_entj, null)!!
+                positiveImage = ResourcesCompat.getDrawable(resources, R.drawable.img_istj, null)!!
                 negativeImage = ResourcesCompat.getDrawable(resources, R.drawable.img_istp, null)!!
             }
 //            -------------------
@@ -185,7 +185,7 @@ class ResultActivity : AppCompatActivity() {
             "ISTJ" -> {
                 title = "혼자있는게 제일 좋아"
                 mbtiTitle = "사회적 거리두기 최강자 ISTJ"
-                mbtiImage = ResourcesCompat.getDrawable(resources, R.drawable.img_esfj, null)!!
+                mbtiImage = ResourcesCompat.getDrawable(resources, R.drawable.img_istj, null)!!
                 hashtag = "#고독하구만 #홀로 자유로움을 추구 #독립적"
                 contents = "당신의 꼬꼬는 조용하고 개인적인 공간을 좋아하는 타입입니다.\n\n" +
                         "스트레스를 받으면 본인만의 공간&방식이 있으며, 그곳에서 아무 방해 없이 힐링하는 것을 즐깁니다.\n\n"+

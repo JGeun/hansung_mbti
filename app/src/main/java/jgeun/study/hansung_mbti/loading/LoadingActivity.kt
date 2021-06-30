@@ -34,6 +34,7 @@ class LoadingActivity : AppCompatActivity() {
             }
             startActivity(Intent(this, QuestionActivity::class.java))
             overridePendingTransition(0, 0);
+            finish()
         }
     }
 }

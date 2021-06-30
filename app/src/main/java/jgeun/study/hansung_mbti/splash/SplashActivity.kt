@@ -24,6 +24,7 @@ class SplashActivity : AppCompatActivity() {
         val runnable : Runnable = Runnable {
             startActivity(Intent(this, LoadingActivity::class.java))
             overridePendingTransition(0, 0);
+            finish()
         }
 
         handler.postDelayed(runnable,1500)
