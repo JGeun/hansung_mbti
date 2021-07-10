@@ -8,6 +8,7 @@ import android.os.Looper
 import jgeun.study.hansung_mbti.MainActivity
 import jgeun.study.hansung_mbti.R
 import jgeun.study.hansung_mbti.databinding.ActivitySplashBinding
+import jgeun.study.hansung_mbti.home.HomeActivity
 import jgeun.study.hansung_mbti.loading.LoadingActivity
 import jgeun.study.hansung_mbti.util.StatusBarUtil
 
@@ -22,7 +23,7 @@ class SplashActivity : AppCompatActivity() {
 
         StatusBarUtil.setStatusBarColor(this, StatusBarUtil.StatusBarColorType.DEFAULT_STATUS_BAR)
         val runnable : Runnable = Runnable {
-            startActivity(Intent(this, LoadingActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
             overridePendingTransition(0, 0);
             finish()
         }

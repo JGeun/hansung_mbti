@@ -9,23 +9,30 @@
         android:roundIcon="@mipmap/splash_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hansung_Mbti">
+        <activity android:name=".home.HomeActivity"></activity>
         <activity
-            android:screenOrientation="portrait"
-            android:name=".result.ResultActivity" />
-        <activity android:screenOrientation="portrait" android:name=".question.QuestionActivity">
+            android:name=".result.ResultActivity"
+            android:screenOrientation="portrait">
 
         </activity>
         <activity
-            android:screenOrientation="portrait"
-            android:name=".loading.LoadingActivity" />
-        <activity android:screenOrientation="portrait" android:name=".splash.SplashActivity">
+            android:name=".question.QuestionActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".loading.LoadingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:screenOrientation="portrait" android:name=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
