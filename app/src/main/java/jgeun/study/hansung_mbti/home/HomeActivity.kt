@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import jgeun.study.hansung_mbti.databinding.ActivityHomeBinding
+import jgeun.study.hansung_mbti.loading.LoadingActivity
 import jgeun.study.hansung_mbti.question.QuestionActivity
 import jgeun.study.hansung_mbti.util.StatusBarUtil
 
@@ -16,7 +17,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.homeLlStart.setOnClickListener{
-            startActivity(Intent(this, QuestionActivity::class.java))
+            startActivity(Intent(this, LoadingActivity::class.java))
 
         }
         StatusBarUtil.setStatusBarColor(this, StatusBarUtil.StatusBarColorType.DEFAULT_STATUS_BAR)

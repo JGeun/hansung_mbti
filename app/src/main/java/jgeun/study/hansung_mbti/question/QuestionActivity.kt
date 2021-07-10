@@ -36,7 +36,7 @@ class QuestionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        StatusBarUtil.setStatusBarColor(this, StatusBarUtil.StatusBarColorType.QUESTION_STATUS_BAR)
+        StatusBarUtil.setStatusBarColor(this, StatusBarUtil.StatusBarColorType.WHITE_STATUS_BAR)
 
         initQuestionList()
         initAnswer()
@@ -243,7 +243,7 @@ class QuestionActivity : AppCompatActivity() {
         firstAnswer.add("미리 다 하고 논다")
         firstAnswer.add("지금 가장 핫한 TOP 100")
         firstAnswer.add("출연배우와 줄거리를 자세히 이야기")
-        firstAnswer.add("쭉 올라가서 큰 건물보이면 왼쪽으로 가")
+        firstAnswer.add("쭉 올라가서 큰 건물보이면\n왼쪽으로 가")
         firstAnswer.add("날짜를 띄엄띄엄 잡는 편")
         firstAnswer.add("스마트한 사람")
 
@@ -255,7 +255,7 @@ class QuestionActivity : AppCompatActivity() {
         secondAnswer.add("어디서부터 잘못된 건지 따져본다")
         secondAnswer.add("끝까지 미루다가 한다")
         secondAnswer.add("내 취향의 숨겨진 명곡")
-        secondAnswer.add("감독의 제작 의도와 주제를 짧게 이야기")
+        secondAnswer.add("감독의 제작 의도와 주제를\n짧게 이야기")
         secondAnswer.add("60m 직진해서 편의점끼고 우회전해")
         secondAnswer.add("연달아 잡는 편")
         secondAnswer.add("다정한 사람")
