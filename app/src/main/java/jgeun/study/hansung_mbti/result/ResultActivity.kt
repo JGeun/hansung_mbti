@@ -1,11 +1,13 @@
 package jgeun.study.hansung_mbti.result
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.res.ResourcesCompat
 import jgeun.study.hansung_mbti.R
 import jgeun.study.hansung_mbti.databinding.ActivityResultBinding
+import jgeun.study.hansung_mbti.home.HomeActivity
 import jgeun.study.hansung_mbti.util.StatusBarUtil
 
 class ResultActivity : AppCompatActivity() {
@@ -42,6 +44,14 @@ class ResultActivity : AppCompatActivity() {
         binding.positiveImage.setImageDrawable(positiveImage)
         binding.negativeTitle.text = negativeMBTI
         binding.negativeImage.setImageDrawable(negativeImage)
+        binding.btnHome.setOnClickListener{
+            finish()
+        }
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 
     private fun initResult(){

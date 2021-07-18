@@ -66,6 +66,7 @@ class QuestionActivity : AppCompatActivity() {
                 println("mbti결정: " + personMBTI)
                 startActivity(intentResult)
                 overridePendingTransition(0, 0);
+                finish()
             }else{
                 logMBTI()
                 settingText()
